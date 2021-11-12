@@ -1,0 +1,174 @@
+.event-card {
+  color: #ffffff;
+  background-image: url(../img/events__bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  &__top {
+    display: flex;
+    padding: 20px 24px 0;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+      padding: 16px 20px 0;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__date {
+    display: flex;
+    margin-right: 48px;
+
+    @media screen and (max-width: 767px) {
+      margin-right: 32px;
+    }
+  }
+
+  &__top-item {
+    &.--format {
+      @media screen and (max-width: 767px) {
+        flex: 0 0 100%;
+        margin-top: 32px;
+      }
+    }
+
+    &+& {
+      margin-left: 48px;
+
+      @media screen and (max-width: 639px) {
+        margin-left: 32px;
+      }
+    }
+  }
+
+  &__top-title {
+    font-size: 14px;
+    display: block;
+  }
+
+  &__top-value {
+    display: block;
+    font-size: 36px;
+    margin-top: 4px;
+    font-weight: 600;
+    line-height: 123%;
+
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 10px 16px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 35px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1;
+    @include btn_anim;
+
+    &.--top {
+      margin-left: 24px;
+
+      @media screen and (max-width: 767px) {
+        margin-left: 0;
+        margin-top: 16px;
+      }
+    }
+  }
+
+  &__title {
+    padding: 0 24px 16px;
+    border-bottom: 3px solid #CDCDCD;
+    font-weight: 600;
+    font-size: 24px;
+
+    @media screen and (max-width: 639px) {
+      font-size: 20px;
+    }
+  }
+
+  &__descr {
+    margin-top: 16px;
+    padding: 0 24px;
+    font-size: 14px;
+  }
+
+  &__tags {
+    padding: 0 24px;
+    margin-top: 48px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    list-style: none;
+
+    @media screen and (max-width: 639px) {
+      flex-wrap: wrap;
+      margin-left: -4px;
+    }
+  }
+
+  &__tag-item {
+
+    &+& {
+      margin-left: 9px;
+
+      @media screen and (max-width: 639px) {
+        margin: 4px;
+      }
+    }
+
+    @media screen and (max-width: 639px) {
+      margin: 4px;
+    }
+  }
+
+  &__tag-link {
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 35px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1;
+    @include btn_anim;
+  }
+
+  &__bottom {
+    margin-top: 24px;
+    padding: 0 24px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 639px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    & .event-card__link {
+      margin: 22px auto 0;
+    }
+  }
+
+  &__org {}
+
+  &__org-title {
+    display: block;
+    font-size: 14px;
+  }
+
+  &__org-text {
+    display: block;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+}

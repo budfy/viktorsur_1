@@ -1,0 +1,527 @@
+.video-page {
+  &__top-wrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fff;
+    background-image: url(../img/disease-desktop-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width: 767px) {
+      background-image: url(../img/disease-mobile-bg.jpg);
+    }
+  }
+
+  &__top-block {
+    display: block;
+    width: 1200px;
+    height: 250px;
+    margin: 0 auto;
+    padding: 0;
+
+    @media (max-width: 1279px) {
+      width: 688px;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 280px;
+      height: 250px;
+    }
+  }
+
+  &__top-title {
+    display: block;
+    width: 1200px;
+    margin: 91px 0;
+    padding: 0;
+    font-family: OpenSansSemiBold,
+      Arial,
+      Helvetica,
+      sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 68px;
+    color: #fff;
+    text-align: left;
+
+    @media (max-width: 1279px) {
+      width: 688px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 240px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+    }
+  }
+
+  &__search-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 1200px;
+    margin: 32px auto 0;
+    padding: 0;
+
+    @media (max-width: 1279px) {
+      width: 688px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: auto;
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+
+  &__bread-crumbs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    ;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 1200px;
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: 1279px) {
+      width: 688px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: auto;
+      margin: 0 auto;
+    }
+
+    a {
+      display: block;
+      width: auto;
+      height: auto;
+      min-height: 16 px;
+      margin: 0;
+      padding: 0;
+      font-family: OpenSansLight,
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: #545454;
+      text-align: left;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  &__video-block-title {
+    display: block;
+    width: 1000px;
+    margin: 50px 0 0;
+    padding: 0;
+    font-family: OpenSansSemiBold,
+      Arial,
+      Helvetica,
+      sans-serif;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 52px;
+    color: #6d6d6d;
+    text-align: left;
+
+    @media (max-width: 1279px) {
+      width: 688px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: auto;
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+
+
+  &__search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 816px;
+    margin: 27px 0 0;
+    padding: 0;
+
+    @media (max-width: 1279px) {
+      width: 688px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: auto;
+      max-width: 100%;
+    }
+
+    @media screen and (max-width: 639px) {
+      flex-direction: column;
+    }
+  }
+
+  &__input-block {
+    position: relative;
+    display: block;
+    width: 644px;
+    height: 40px;
+    margin: 0;
+    padding: 0 40px 0 25px;
+    box-sizing: border-box;
+    border: 1px solid #cdcdcd;
+    border-radius: 50px;
+
+    @media (max-width: 1279px) {
+      width: 514px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+
+  &__search-input {
+    display: block;
+    width: 579px;
+    height: 38px;
+    margin: 0;
+    padding: 10px 0 11px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: OpenSansSemiBold, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #6d6d6d;
+    text-align: left;
+    border: none;
+
+    @media (max-width: 1279px) {
+      width: 449px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: auto;
+      max-width: 100%;
+    }
+
+  }
+
+  &__clear-button {
+    position: absolute;
+    top: calc(50% - 14px / 2);
+    right: 21px;
+    display: none;
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url(../img/close-search-icon.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  &__search-button {
+    display: block;
+    width: 142px;
+    height: 40px;
+    margin: 0;
+    padding: 0 43px 0 45px;
+    box-sizing: border-box;
+    font-family: OpenSansRegular,
+      Arial,
+      Helvetica,
+      sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+    background-color: #0097d7;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+
+    @media screen and (max-width: 639px) {
+      margin-top: 8px;
+    }
+  }
+
+  &__date-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    margin: 38px 0 0;
+    padding: 0;
+
+    @media screen and (max-width: 639px) {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+
+  &__block-title {
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-family: OpenSansLight,
+      Arial,
+      Helvetica,
+      sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #6d6d6d;
+    text-align: left;
+  }
+
+  &__date-input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    margin: 0;
+    padding: 0;
+
+    @media screen and (max-width: 639px) {
+      margin-top: 8px;
+    }
+
+    span {
+      display: block;
+      width: auto;
+      margin: 0 0 0 8px;
+      padding: 0;
+      font-family: OpenSansLight,
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 19px;
+      color: #686868;
+      text-align: left;
+    }
+  }
+
+  &__input-date-block {
+    position: relative;
+    display: block;
+    width: 170px;
+    height: 36px;
+    margin: 0 0 0 7px;
+    padding: 0 0 0 33px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 50px;
+    border: 1px solid #cdcdcd;
+
+    &::before {
+      position: absolute;
+      top: calc(50% - 15px /2);
+      left: 13.3px;
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      margin: 0;
+      padding: 0;
+      background-image: url(../img/light-calendar-icon.svg);
+      background-position: center;
+      background-size: auto;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__date-input {
+    display: block;
+    width: 120px;
+    height: 33px;
+    margin: 0;
+    padding: 7px 0;
+    box-sizing: border-box;
+    font-family: OpenSansRegular,
+      Arial,
+      Helvetica,
+      sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #6d6d6d;
+    text-align: left;
+    border: none;
+  }
+
+  &__tags {
+    margin-top: 42px;
+  }
+
+  &__tag-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 12px -8px -4px -8px;
+
+    @media screen and (max-width: 639px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__tag-item {
+    margin: 4px 8px;
+  }
+
+  &__tag-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.33;
+    display: block;
+    padding: 4px 10px;
+    background-color: #0097D7;
+    border-radius: 30px;
+    width: fit-content;
+    @include btn_anim;
+
+    &.--green {
+      background-color: #008053;
+    }
+
+    &.--yellow {
+      background-color: #F39600;
+    }
+  }
+}
+
+.events-page {
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 1200px;
+    margin: 57px auto 0;
+    padding: 0;
+
+    @media (max-width: 1279px) {
+      width: 688px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+
+  &__search-result {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1109px;
+    margin: 46px 0 0;
+    padding: 0;
+    list-style: none;
+
+    @media (max-width: 1279px) {
+      width: 688px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+
+  &__search-result-item {
+    display: block;
+    width: auto;
+    margin: 0 0 0 23px;
+    padding: 0;
+    font-family: OpenSansLight, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #6d6d6d;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fff;
+    cursor: pointer;
+
+    &.--current {
+      font-family: OpenSansSemiBold,
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-weight: 600;
+    }
+
+    &:nth-of-type(1) {
+      margin-left: 0;
+    }
+
+    & span {
+      margin-left: 4px;
+    }
+  }
+
+  &__search-result-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 1100px;
+    margin: 39px 0 0;
+    padding: 0;
+
+    @media (max-width: 1279px) {
+      width: 688px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+}
+
+
+input[type=search] {
+  outline: 0;
+  -webkit-appearance: none;
+}

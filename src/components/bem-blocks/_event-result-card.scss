@@ -1,0 +1,132 @@
+.event-result-card {
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
+
+  &__date {
+    background-image: url(../img/events-date__bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    padding: 12px 16px 12px 28px;
+
+    @media screen and (max-width: 639px) {
+      padding: 12px 16px;
+    }
+  }
+
+  &__content {
+    padding: 32px 32px 32px 24px;
+
+    @media screen and (max-width: 639px) {
+      padding: 32px 16px 16px;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.23;
+    color: #0097d7;
+
+    @media screen and (max-width: 639px) {
+      font-size: 16px;
+    }
+  }
+
+  &__descr {
+    margin-top: 16px;
+    font-size: 14px;
+
+  }
+
+  &__tags {
+    margin-top: 44px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    list-style: none;
+
+    @media screen and (max-width: 639px) {
+      margin-left: -4px;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__tag-item {
+    &+& {
+      margin-left: 9px;
+
+      @media screen and (max-width: 639px) {
+        margin: 4px;
+      }
+    }
+
+    margin: 4px;
+  }
+
+  &__tag-link {
+    display: block;
+    padding: 5px 10px;
+    color: #ffffff;
+    background-color: #008053;
+    text-decoration: none;
+    border-radius: 35px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1;
+    @include btn_anim;
+  }
+
+  &__format {
+    text-align: center;
+    margin-top: 34px;
+    margin-bottom: 0;
+    font-size: 14px;
+
+    & span {
+      font-weight: 600;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 639px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 24px;
+    }
+  }
+
+  &__link {
+    color: #0097d7;
+    font-weight: 600;
+    font-size: 14px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__more {
+    margin-top: 24px;
+    display: block;
+    padding: 10px 16px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #0097d7;
+    text-decoration: none;
+    border: 2px solid #0097D7;
+    border-radius: 35px;
+    @include btn_anim;
+
+    @media screen and (max-width: 639px) {
+      margin-top: 0;
+    }
+  }
+}
