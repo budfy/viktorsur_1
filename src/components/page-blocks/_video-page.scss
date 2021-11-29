@@ -276,6 +276,45 @@
     }
   }
 
+  &__tag {
+    display: block;
+    width: auto;
+    min-height: 23px;
+    margin: 0 10px 13px 0;
+    padding: 4px 14px 3px;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    background-color: #008053;
+    transition: all 0.24s;
+
+    &[data-filter-switch="true"] {
+      position: relative;
+      padding-right: 26px;
+      opacity: .6;
+
+      &::after {
+        position: absolute;
+        top: calc(50% - 12px/2);
+        right: 7px;
+        content: "";
+        width: 12px;
+        height: 12px;
+        background-image: url(../img/tag-unpressed-icon.svg);
+        background-position: center;
+        background-size: auto;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
   &__date-block {
     display: flex;
     flex-direction: row;

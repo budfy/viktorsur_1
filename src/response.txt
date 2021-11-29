@@ -1,0 +1,86 @@
+
+
+
+
+			
+      <div class="data-video-container">
+        <ul class="events-page__search-result">
+			<li class="events-page__search-result-item events-page__search-result-item--current" id="upcoming" data-filter-button="status" value="upcoming">Предстоящие<span>(1)</span></li>
+			<li class="events-page__search-result-item" id="past" data-filter-button="status" value="past">Прошедшие<span>(0)</span></li>
+		</ul>
+		<div class="events-page__search-result-cards events-search-slider">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+
+    
+        
+              <article class="swiper-slide event-result-card" id="bx_3218110189_159">
+                <time datetime="2022-03-18 15:00"
+                      class="event-result-card__date">
+                  <span class="event-card__top-item">
+                    <span class="event-card__top-title">Дата</span>
+                    <span class="event-card__top-value">12 Января</span>
+                  </span>
+                  <span class="event-card__top-item">
+                    <span class="event-card__top-title">Время:</span>
+                    <span class="event-card__top-value">1:01 (МСК)</span>
+                  </span>
+                </time>
+                <div class="event-result-card__content">
+                  <h3 class="event-result-card__title">Искусственное питание и инфузионная терапия больных в медицине критических состояний</h3>
+                  <p class="event-result-card__descr">Научный организатор Луфт</p>
+                  <ul class="event-result-card__tags">
+                            <li class="event-result-card__tag-item">
+						<a href="#" class="event-result-card__tag-link" style="background-color: #0097d7">Взрослые</a>
+					 </li>
+		                    <li class="event-result-card__tag-item">
+						<a href="#" class="event-result-card__tag-link" style="background-color: #008053">Исследование</a>
+					 </li>
+		                    <li class="event-result-card__tag-item">
+						<a href="#" class="event-result-card__tag-link" style="background-color: #008053">Нутритативная поддержка</a>
+					 </li>
+		                    <li class="event-result-card__tag-item">
+						<a href="#" class="event-result-card__tag-link" style="background-color: #008053">О синдроме</a>
+					 </li>
+		                    <li class="event-result-card__tag-item">
+						<a href="#" class="event-result-card__tag-link" style="background-color: #008053">Паллиативная помощь</a>
+					 </li>
+		                    <li class="event-result-card__tag-item">
+						<a href="#" class="event-result-card__tag-link" style="background-color: #008053">Поддержка пациентов</a>
+					 </li>
+		                    <li class="event-result-card__tag-item">
+						<a href="#" class="event-result-card__tag-link" style="background-color: #008053">Симптомы</a>
+					 </li>
+		                    <li class="event-result-card__tag-item">
+						<a href="#" class="event-result-card__tag-link" style="background-color: #008053">Этиология</a>
+					 </li>
+		                    <li class="event-result-card__tag-item">
+						<a href="#" class="event-result-card__tag-link" style="background-color: #008053">Эффективность</a>
+					 </li>
+		                    <li class="event-result-card__tag-item">
+						<a href="#" class="event-result-card__tag-link" style="background-color: #008053">Юр. информация</a>
+					 </li>
+		                  </ul>
+                          <p class="event-result-card__format">Формат проведения: <span>Онлайн</span></p>
+                          <div class="event-result-card__links">
+                    <a href="/hcp/events/iskusstvennoe-pitanie/"
+                       class="event-result-card__link">Перейти</a>
+                    <a href="/hcp/events/iskusstvennoe-pitanie/"
+                       class="event-result-card__more">Узнать больше</a>
+                  </div>
+                </div>
+              </article>
+                </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+            
+
+
+
+
+
+
+
+

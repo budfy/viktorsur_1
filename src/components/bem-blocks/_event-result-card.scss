@@ -47,22 +47,12 @@
     justify-content: flex-start;
     align-items: start;
     list-style: none;
+    flex-wrap: wrap;
+    margin-left: -4px;
 
-    @media screen and (max-width: 639px) {
-      margin-left: -4px;
-      flex-wrap: wrap;
-    }
   }
 
   &__tag-item {
-    &+& {
-      margin-left: 9px;
-
-      @media screen and (max-width: 639px) {
-        margin: 4px;
-      }
-    }
-
     margin: 4px;
   }
 

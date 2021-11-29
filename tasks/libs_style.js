@@ -16,7 +16,7 @@ module.exports = function libs_style(done) {
     return src(plugins)
       .pipe(map.init())
       .pipe(sass({
-        outputStyle: 'compressed'
+        outputStyle: 'expanded'
       }).on('error', sass.logError))
       .pipe(concat('libs.min.css'))
       .pipe(map.write('../sourcemaps/'))

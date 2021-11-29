@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-				content="width=device-width, initial-scale=1.0">
-	<meta name="description"
-				content="Gulp pack for easy html/php markup development">
-	<meta name="keywords"
-				content="">
-	<link rel="shortcut icon"
-				href="img/favicons/favicon.svg"
-				type="image/svg+xml">
-	<link rel="shortcut icon"
-				href="img/favicons/favicon.webp"
-				type="image/webp">
-	<link rel="shortcut icon"
-				href="img/favicons/favicon.png"
-				type="image/x-icon">
-	<link rel="stylesheet"
-				href="css/libs.min.css">
-	<link rel="stylesheet"
-				href="css/style.min.css">
-	<title>Easy-webdev-startpack v3.0</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Gulp pack for easy html/php markup development">
+    <meta name="keywords"
+          content="">
+    <link rel="shortcut icon"
+          href="img/favicon.png"
+          type="image/x-icon">
+    <link rel="stylesheet"
+          href="css/libs.min.css">
+    <link rel="stylesheet"
+          href="css/style.min.css">
+    <title>Easy-webdev-startpack v3.0</title>
+  </head>
 
 
 <body>
@@ -216,41 +210,50 @@
             </div>
           </div>
         </div>
+
+        <div class="video-page__tags">
+          <p class="video-page__block-title">Теги видео:</p>
+          <ul class="video-page__tag-list">
+            <li class="video-page__tag-item">
+              <button type="button"
+                      value="22"
+                      data-filter-switch="true"
+                      class="video-page__tag">Patient-management</button>
+            </li>
+            <li class="video-page__tag-item">
+              <button type="button"
+                      value="22"
+                      data-filter-switch="false"
+                      class="video-page__tag">Patient-management</button>
+            </li>
+            <li class="video-page__tag-item">
+              <button type="button"
+                      value="22"
+                      data-filter-switch="false"
+                      class="video-page__tag">Patient-management</button>
+            </li>
+            <li class="video-page__tag-item">
+              <button type="button"
+                      value="22"
+                      data-filter-switch="false"
+                      class="video-page__tag">Patient-management</button>
+            </li>
+          </ul>
+
+          <ul class="events-page__search-result">
+            <li class="events-page__search-result-item events-page__search-result-item--current"
+                id="upcoming"
+                data-filter-button="status"
+                value="upcoming">Предстоящие<span>(3)</span></li>
+            <li class="events-page__search-result-item"
+                id="past"
+                data-filter-button="status"
+                value="past">Прошедшие<span>(10)</span></li>
+          </ul>
+        </div>
       </form>
 
-      <div class="video-page__tags">
-        <p class="video-page__block-title">Теги видео:</p>
-        <ul class="video-page__tag-list">
-          <li class="video-page__tag-item">
-            <a href="#"
-               class="video-page__tag-link --blue">Patient-management</a>
-          </li>
-          <li class="video-page__tag-item">
-            <a href="#"
-               class="video-page__tag-link --green">Efficacy</a>
-          </li>
-          <li class="video-page__tag-item">
-            <a href="#"
-               class="video-page__tag-link --yellow">CNA</a>
-          </li>
-          <li class="video-page__tag-item">
-            <a href="#"
-               class="video-page__tag-link --blue">Врачам</a>
-          </li>
-        </ul>
-      </div>
-
       <div class="data-video-container">
-        <ul class="events-page__search-result">
-          <li class="events-page__search-result-item events-page__search-result-item--current"
-              id="upcoming"
-              data-filter-button="status"
-              value="upcoming">Предстоящие<span>(3)</span></li>
-          <li class="events-page__search-result-item"
-              id="past"
-              data-filter-button="status"
-              value="past">Прошедшие<span>(10)</span></li>
-        </ul>
 
         <div class="events-page__search-result-cards events-search-slider">
           <div class="swiper">
@@ -279,69 +282,17 @@
                       <a href="#"
                          class="event-result-card__tag-link">Клинические случаи</a>
                     </li>
-                  </ul>
-                  <p class="event-result-card__format">Формат проведения: <span>Онлайн</span></p>
-                  <div class="event-result-card__links">
-                    <a href="#"
-                       class="event-result-card__link">Перейти</a>
-                    <a href="#"
-                       class="event-result-card__more">Узнать больше</a>
-                  </div>
-                </div>
-              </article>
-              <article class="swiper-slide event-result-card">
-                <time datetime="2022-03-18 15:00"
-                      class="event-result-card__date">
-                  <span class="event-card__top-item">
-                    <span class="event-card__top-title">Дата</span>
-                    <span class="event-card__top-value">30 марта</span>
-                  </span>
-                  <span class="event-card__top-item">
-                    <span class="event-card__top-title">Время:</span>
-                    <span class="event-card__top-value">15:00 (МСК)</span>
-                  </span>
-                </time>
-                <div class="event-result-card__content">
-                  <h3 class="event-result-card__title">VI Образовательный паллиативный медицинский форум в федеральных округах России - Центральный федеральный округ</h3>
-                  <p class="event-result-card__descr">«Вопросы диагностики и лечения гематологических и онкогематологических заболеваний в Нижегородской области»</p>
-                  <ul class="event-result-card__tags">
                     <li class="event-result-card__tag-item">
                       <a href="#"
-                         class="event-result-card__tag-link">Эффективность</a>
+                         class="event-result-card__tag-link">Клинические случаи</a>
                     </li>
                     <li class="event-result-card__tag-item">
                       <a href="#"
                          class="event-result-card__tag-link">Клинические случаи</a>
                     </li>
-                  </ul>
-                  <p class="event-result-card__format">Формат проведения: <span>Онлайн</span></p>
-                  <div class="event-result-card__links">
-                    <a href="#"
-                       class="event-result-card__link">Перейти</a>
-                    <a href="#"
-                       class="event-result-card__more">Узнать больше</a>
-                  </div>
-                </div>
-              </article>
-              <article class="swiper-slide event-result-card">
-                <time datetime="2022-03-18 15:00"
-                      class="event-result-card__date">
-                  <span class="event-card__top-item">
-                    <span class="event-card__top-title">Дата</span>
-                    <span class="event-card__top-value">30 марта</span>
-                  </span>
-                  <span class="event-card__top-item">
-                    <span class="event-card__top-title">Время:</span>
-                    <span class="event-card__top-value">15:00 (МСК)</span>
-                  </span>
-                </time>
-                <div class="event-result-card__content">
-                  <h3 class="event-result-card__title">VI Образовательный паллиативный медицинский форум в федеральных округах России - Центральный федеральный округ</h3>
-                  <p class="event-result-card__descr">«Вопросы диагностики и лечения гематологических и онкогематологических заболеваний в Нижегородской области»</p>
-                  <ul class="event-result-card__tags">
                     <li class="event-result-card__tag-item">
                       <a href="#"
-                         class="event-result-card__tag-link">Эффективность</a>
+                         class="event-result-card__tag-link">Клинические случаи</a>
                     </li>
                     <li class="event-result-card__tag-item">
                       <a href="#"
