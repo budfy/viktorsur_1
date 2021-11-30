@@ -21,10 +21,6 @@ const eventsResultSlider = new Swiper('.events-search-slider .swiper', {
   }
 });
 
-
-
-
-
 function createRequestUrl() {
   const requestPageUrl = document.querySelector('[data-ajax-url]').dataset.ajaxUrl;
   let searchText = document.querySelector('[data-filter-input="search"]').value || '';

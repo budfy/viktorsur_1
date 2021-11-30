@@ -1,5 +1,11 @@
 .event-result-card {
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
+  max-width: calc(50% - 15px);
+  height: auto;
+
+  @media screen and (max-width: 767px) {
+    max-width: unset;
+  }
 
   &__date {
     background-image: url(../img/events-date__bg.jpg);
