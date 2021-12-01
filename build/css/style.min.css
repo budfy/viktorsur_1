@@ -507,7 +507,15 @@ body {
   -webkit-box-shadow: 0 4px 7px rgba(0, 0, 0, .25);
   box-shadow: 0 4px 7px rgba(0, 0, 0, .25);
   max-width: calc(50% - 15px);
+  margin-right: 30px;
   height: auto
+}
+
+@media screen and (max-width:767px) {
+  .event-result-card {
+    max-width: unset;
+    margin-right: 0
+  }
 }
 
 .event-result-card__date {
@@ -731,9 +739,6 @@ body {
 }
 
 @media screen and (max-width:767px) {
-  .event-result-card {
-    max-width: unset
-  }
 
   .data-video-container,
   .events-page__cards .swiper,
