@@ -106,7 +106,8 @@ function dateSwitcher() {
       el.addEventListener('click', switchDates)
     }
   })
-  switchDates(e) {
+
+  function switchDates(e) {
     e.preventDefault();
     dates.forEach(el => el.classList.remove('events-page__search-result-item--current'));
     e.target.classList.add('events-page__search-result-item--current');
